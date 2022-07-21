@@ -1,0 +1,19 @@
+  <aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+      <a routerLink="/produtos">
+        <img src="assets/images/logo.png"  class="img-responsive">
+      </a>
+    </div>
+    <div class="menu-sidebar-content js-scrollbar1">
+      <nav class="navbar-sidebar">
+        <ul class="list-unstyled navbar-list">
+
+          <li *ngFor="let ProdutoCatogorias of produtoCatogorias">
+           <a routerLink="/categoria/{{ProdutoCatogorias.id}}"  routerLinkActive="active-link" >{{ProdutoCatogorias.categoria_nome}}
+
+           </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>

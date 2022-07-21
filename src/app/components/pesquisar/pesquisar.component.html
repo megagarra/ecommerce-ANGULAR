@@ -1,0 +1,9 @@
+<form class="form-header">
+  <input #Input class="au-input au-input-xl"  placeholder="Procurar..." (keyup.enter)="pesquisar(Input.value)"/>
+
+
+  <button class="au-btn-submit" type="submit"
+  (click)="pesquisar(Input.value)">
+    Procurar
+  </button>
+</form>

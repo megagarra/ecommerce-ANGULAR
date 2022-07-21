@@ -1,0 +1,39 @@
+
+<div class="container">
+  <div class="row" >
+
+    <div class="col-md-4" *ngFor="let produto of produtos">
+      <figure class="card card-product-grid card-lg">
+        <div class="produto-box">
+        <a routerLink="/produtos/{{produto.id}}" class="img-wrap" data-abc="true"
+          ><img
+            src="{{ produto.imagem }}"
+        /></a>
+        <figcaption class="info-wrap">
+          <div class="row">
+            <div class="col-md-8">
+              <a routerLink="/produtos/{{produto.id}}" class="title" data-abc="true"
+                >{{ produto.descricao }}</a
+              >
+            </div>
+          </div>
+        </figcaption>
+        <div class="bottom-wrap">
+          <button (click)="addToCart(produto)" class="btn btn-primary btn-sm" > Add carrinho </button>
+
+        </div>
+          <div class="price-wrap">
+
+            <span class="price h5">{{produto.preco_unidade}}</span> <br />
+            <small class="text-success">Promocao</small>
+          </div>
+        </div>
+      </figure>
+    </div>
+
+    <div *ngIf="produtos?.length==0" class="alert alert-warning col-md-12" role="alert">
+      Nao temos esse produto ou você digitou errado
+    </div>
+
+  </div>
+</div>

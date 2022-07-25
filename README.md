@@ -1,3 +1,5 @@
+Ecommerce usando Angular com TYPESCRIPT, Bootstrap totalmente responsivo com painel de admin, contem casdastro de consumidores, vendedores, crud de produtos etc.
+
 # Ecommerce
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
